@@ -10,10 +10,14 @@
 <body>
 	<section>
 		<form>
+		    <input placeholder='Full Name' type='text' autocomplete='cc-name' x-autocompletetype='cc-full-name'/>
+
 			<fieldset class="credit-card-group">
 				<legend>Credit Card Information</legend>
+
+
 				<label for="card-number">Credit Card Number</label>
-				<input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" class="card-number" id="card-number">
+  			<input placeholder="1234 5678 9012 3456" pattern="[0-9]*" type="text" className="card-number" id="card-number" autocomplete='cc-number' x-autocompletetype='cc-number'/>
 				<label for="card-number">Expiration Date</label>
 				<input placeholder="MM/YY" pattern="[0-9]*" type="text" class="card-expiration" id="card-expiration">
 				<label for="card-number">CVV Number</label>
